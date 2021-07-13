@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-RUN apk update && apk add pdns-recursor
+RUN apk update && apk add pdns-recursor && apk add tcpdump
 
 EXPOSE 53/udp 53/tcp
 
